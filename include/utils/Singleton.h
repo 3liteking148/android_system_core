@@ -51,6 +51,8 @@ protected:
 private:
     Singleton(const Singleton&);
     Singleton& operator = (const Singleton&);
+
+public:
     static Mutex sLock;
     static TYPE* sInstance;
 };
